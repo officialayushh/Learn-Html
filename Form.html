@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="container">
+        <!-- type is defind what you can write in box -->
+        <input type="text" placeholder="Enter your name"> 
+        <input type="number" name="a-number" required min="10" max="50" step="5">
+
+        <input type="color" name="car-color" value="#000000">
+        <input type="range" name="age" min="0" max="100" value="30" step="10">
+
+        <input type="text" name="username" pattern="[a-zA-Z]{8}">
+    
+    
+        <!-- This is commonly used to store values like a CSRF token, used for
+    security and user identification, or even to detect robots sending spam,
+    using special techniques. -->
+        <!-- <input type="hidden" name="some-hidden-field" value="some-value">  This will be not showing user but it will be pass on server -->
+    
+        <input type="submit" value="Click me">
+    
+        <input type="file" name="secret-documents">
+        <input type="file" name="secret-documents" multiple>
+        <input type="file" name="secret-documents" accept=".jpg, .jpeg, .png">
+
+
+        <input type="password" pattern="{5,10}" placeholder="Enter your password"> <!-- Pattern is password length -->
+        <input type="number" placeholder="Enter Your age">
+
+        <input type="time" name="time-to-pickup">
+        <input type="date" name="mydate">
+        <input type="month" name="choose-release-month">
+        <input type="week" name="choose-week">
+        <input type="datetime-local" name="date-and-time">
+        
+        Are You eligible?<input type="checkbox" name="checkbox">
+        <label for="option"> <!-- Same id and label for is good for user to type anywhere element shows click or do it. -->
+            Yes:<input type="radio" name="option1" value="Yes" id="option">  <!-- same name give then choose any one option there. -->
+        </label>
+        <label for="optionValue">
+            NO:<input type="radio" name="option1" value="No" id="optionValue">
+        </label>
+        <textarea name="Explain" id="Explain" cols="30" rows="10" placeholder="Explain About Yourself" ?></textarea>
+        <select name="choose" id="choose">  <!-- choose any one select option -->
+            <option value="rajasthan">Select</option>
+            <option value="rajasthan">rajasthan</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Pune">Pune</option>
+        </select>
+
+        <select name="color">  <!-- Use here outGroup Tag for an like heading inside word sees -->
+            <optgroup label="Primary">
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="blue">Blue</option>
+            </optgroup>
+            <optgroup label="Others">
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
+            </optgroup>
+        </select>
+
+
+<!-- Particular any tag type :- title="hobby" then after hover inside its shows as . -->
+    </div>
+</body>
+</html>

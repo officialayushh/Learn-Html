@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Advance IN Basics</title>
+</head>
+<body>
+    <big>Ayush</big>
+    <small>Ayush</small>
+    
+    <pre>Ayush is this side</pre> <!-- As it is print spaces and all  -->
+
+    <!-- Subscript and superscript -->
+    <p>H<sub>2</sub></p>
+    <p>ax<sup>2</sup>+bx+c</p>
+    <!-- Arrows Different Types, Also Search arrows in google -->
+    <p>C+O<sub>2</sub>&rarr;CO<sub>2</sub></p>
+
+    <!-- All are Inline Elements -->
+    <mark>
+        mark
+    </mark>
+    <ins>
+        ins
+    </ins>
+    <del>
+        del
+    </del>   
+
+    <!-- For an Image Part -->
+    <figure>
+        <img src="" alt="">
+        alt="A nice dog">
+        <figcaption>A nice dog</figcaption>
+    </figure>
+        <br>
+
+    <!-- We can set any image this type -->
+
+
+    <!-- <img src="dog.png"
+        alt="A picture of a dog"
+        srcset="dog-500.png 500w,
+        dog-800.png 800w,
+        dog-1000.png 1000w,
+        dog-1400.png 1400w">  -->
+
+    <!-- In the srcset we use the w measure to indicate the window width -->
+
+    <!-- <img src="dog.png"
+        alt="A picture of a dog"
+        sizes="(max-width: 500px) 100vw, (max-width: 900px) 50vw, 800
+        px"
+        srcset="dog-500.png 500w,
+        dog-800.png 800w,
+        dog-1000.png 1000w,
+        dog-1400.png 1400w"> -->
+
+
+            <!-- Picture Tag  -->
+        <!-- Inside Picture Tag you can use media queries also. -->
+
+        <!-- Example:- -->
+        <picture>
+            <source media="(min-width: 500w)" srcset="dog-500.png" sizes="1
+            00vw">
+            <source media="(min-width: 800w)" srcset="dog-800.png" sizes="1
+            00vw">
+            <source media="(min-width: 1000w)" srcset="dog-1000.png" siz
+            es="800px">
+            <source media="(min-width: 1400w)" srcset="dog-1400.png" siz
+            es="800px">
+            <img src="dog.png" alt="A dog image">
+        </picture>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Notes</title>
+</head>
+<body>
+    <!-- Firstly We Make I Frames Notes. -->
+
+    <!-- We can select what to allow by adding options in the sandbox
+        attribute. You can allow multiple ones by adding a space in between.
+        Here's an incomplete list of the options you can use:
+        allow-forms : allow to submit forms
+        allow-modals allow to open modals windows, including calling
+        alert() in JavaScript
+        allow-orientation-lock allow to lock the screen orientation.
+        allow-popups allow popups, using window.open() and
+        target="_blank" links
+        allow-same-origin treat the resource being loaded as same
+        origin
+        allow-scripts lets the loaded iframe run scripts (but not create
+        popups).
+        allow-top-navigation gives access to the iframe to the top level
+        browsing context -->
+        <iframe src="https://www.facebook.com" sandbox=""></iframe>
+
+
+        <!-- Allow -->
+
+        <!-- accelerometer gives access to the Sensors API Accelerometer
+            interface
+            ambient-light-sensor gives access to the Sensors API
+            AmbientLightSensor interface
+            autoplay allows to autoplay video and audio files
+            camera allows to access the camera from the getUserMedia API
+            display-capture allows to access the screen content using the
+            getDisplayMedia API
+            fullscreen allows to access fullscreen mode
+            geolocation allows to access the Geolocation API
+            gyroscope gives access to the Sensors API Gyroscope interface
+            magnetometer gives access to the Sensors API Magnetometer 
+            interface
+            microphone gives access to the device microphone using the
+            getUserMedia API
+            midi allows access to the Web MIDI API
+            payment gives access to the Payment Request API
+            speaker allows access to playing audio through the device
+            speakers
+            usb gives access to the WebUSB API.
+            vibrate gives access to the Vibration API
+            vr gives access to the WebVR API   -->
+
+        <!-- Referrer -->
+
+        <!-- The misspelling of referrer originated in the original proposal by
+            computer scientist Phillip Hallam-Baker to incorporate the field into
+            the HTTP specification. The misspelling was set in stone by the
+            time of its incorporation into the Request for Comments standards
+            document RFC 1945 -->
+
+        <!-- The referrerpolicy attribute lets us set the referrer to send to the
+            iframe when loading it. The referrer is an HTTP header that lets the
+            page know who is loading it. These are the allowed values:
+            no-referrer-when-downgrade it's the default, and does not send
+            the referrer when the current page is loaded over HTTPS and the
+            iframe loads on the HTTP protocol
+            no-referrer does not send the referrer header 
+            origin the referrer is sent, and only contains the origin (port,
+            protocol, domain), not the origin + path which is the default
+            origin-when-cross-origin when loading from the same origin
+            (port, protocol, domain) in the iframe, the referrer is sent in its
+            complete form (origin + path). Otherwise only the origin is sent
+            same-origin the referrer is sent only when loading from the same
+            origin (port, protocol, domain) in the iframe
+            strict-origin sends the origin as the referrer if the current page
+            is loaded over HTTPS and the iframe also loads on the HTTPS
+            protocol. Sends nothing if the iframe is loaded over HTTP
+            strict-origin-when-cross-origin sends the origin + path as the
+            referrer when working on the same origin. Sends the origin as the
+            referrer if the current page is loaded over HTTPS and the iframe
+            also loads on the HTTPS protocol. Sends nothing if the iframe is
+            loaded over HTTP
+            unsafe-url : sends the origin + path as the referrer even when
+            loading resources from HTTP and the current page is loaded over HTTPS.  -->
+
+            
+</body>
+</html>
